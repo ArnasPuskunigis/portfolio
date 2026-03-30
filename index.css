@@ -464,7 +464,9 @@ body:not(.user-is-tabbing) a:focus {
 .tag--steam    { background: #1b2838; color: #c7d5e0; border: 1px solid #4c6b8a; }
 .tag--ugs      { background: #395797; color: #fff; }
 .tag--gamejam  { background: #8b2252; color: #fff; }
-.tag--mobile   { background: #2e7d32; color: #fff; }
+.tag--java   { background: #e92d32; color: #fff; }
+.tag--android   { background: #71c04a; color: #fff; }
+.tag--API   { background: #b339a3; color: #fff; }
 
 .work__boxes {
     display: grid;
