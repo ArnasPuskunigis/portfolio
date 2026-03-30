@@ -6,15 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/Ap.jpg" />
 
-  <title>
-    Arnas Puskunigis | C# Software Engineer
-  </title>
-  <p>
-    C# Software Engineer | Unity & Gameplay Systems
-  </p>
+  <title>Arnas Puskunigis | C# Software Engineer</title>
 
-  <meta name="description" content="A Unity game developer.">
-  <meta name="keywords" content="Arnas Puskunigis (Unity, 3D, Game Developer, Developer, C#, Blender, Software, Engineer, OpenGL, Networking, Multiplayer, VR, Mobile)" />
+  <meta name="description" content="C# Software Engineer specialising in Unity and gameplay systems programming.">
+  <meta name="keywords" content="Arnas Puskunigis, Unity, Game Developer, C#, C++, Blender, OpenGL, Software Engineer" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -24,9 +19,11 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="#work" class="nav__link">Work</a></li>
+            <a href="#work" class="nav__link">Work</a>
+          </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
+          </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -38,7 +35,7 @@
         <h1 class="heading-primary">
           <span>Arnas Puskunigis</span>
         </h1>
-        <p>A Game Developer.</p>
+        <p>Games &amp; Software Devloper</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -49,180 +46,165 @@
     <!-- ***** Work ***** -->
     <section class="work" id="work">
       <div class="row">
-        <h2>My Personal Projects</h2>
+        <h2>Personal Projects</h2>
         <div class="work__boxes">
 
           <div class="work__box">
+            <div class="work__image-box">
+              <img src="./images/Gmd.png" class="work__image" alt="Gunman Drift" />
+            </div>
             <div class="work__text">
               <h3>Gunman Drift</h3>
-              <p>
-                A live 3D stylised driving and shooting game built with Unity and C#.
-              </p>
+              <div class="work__tags">
+                <span class="work__tag tag--csharp">C#</span>
+                <span class="work__tag tag--unity">Unity</span>
+                <span class="work__tag tag--steam">SteamWorks</span>
+                <span class="work__tag tag--ugs">Unity UGS</span>
+              </div>
+              <p>A live 3D stylised driving and shooting game shipped on Steam.</p>
               <ul class="work__list">
-                <li>Used Unity UGS to securely manage player data such as XP and currency, preventing client-side manipulation of economy and leaderboard statistics</li>
-                <li>Built a visually and functionally engaging reward system based on player feedback</li>
-                <li>SteamWorks integrations which allow players to buy and sell in-game items for Steam balance</li>
-                <li>Implemented Unity UGS leaderboards using async callbacks, also usernames taken from Steam</li>
+                <li>Unity UGS for secure player data — XP, currency, and leaderboards — preventing client-side manipulation</li>
+                <li>SteamWorks integration allowing players to buy and sell in-game items for Steam balance</li>
+                <li>Reward system built around player feedback with visual and functional polish</li>
+                <li>Leaderboard system using async callbacks with usernames pulled from Steam</li>
               </ul>
-
               <div class="work__links">
                 <a href="https://store.steampowered.com/app/3621150/Gunman_Drift/" target="_blank" class="link__text">
-                  Visit Steam Page <span>&rarr;</span>
+                  Steam Page <span>&rarr;</span>
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Gmd.png" class="work__image" alt="Project 1" />
-            </div>
           </div>
 
-          <!-- <div class="work__box">
+          <div class="work__box">
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="DRIVE: The Ten Fuel Cans" />
+            </div>
             <div class="work__text">
-              <h3>OpenGL Car Inspector</h3>
-              <p>
-                Inspect your car or other models through a toon shader.
-              </p>
+              <h3>DRIVE: THE TEN FUEL CANS</h3>
+              <div class="work__tags">
+                <span class="work__tag tag--cpp">C++</span>
+                <span class="work__tag tag--opengl">OpenGL</span>
+                <span class="work__tag tag--glsl">GLSL</span>
+              </div>
+              <p>Horror-inspired driving game built from scratch — no engine, full low-level graphics control.</p>
               <ul class="work__list">
-                <li>OpenGL</li>
-                <li>C++</li>
-                <li>GLSL</li>
+                <li>Custom 3D rendering pipeline built entirely in OpenGL</li>
+                <li>Lighting model written in GLSL fragment and vertex shaders</li>
+                <li>Camera, transformations, and matrix math handled manually</li>
+                <li>Collision detection and fuel collection system</li>
               </ul>
-
               <div class="work__links">
-                
-                <a href="https://github.com/ArnasPuskunigis/comp3015/tree/e32a300cece7cb2ef90a6302be0047b8ac5c53a1">
+                <a href="https://github.com/ArnasPuskunigis/comp3015" target="_blank">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 2" />
-            </div>
-          </div> -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>DRIVE : THE TEN FUEL CANS</h3>
-              <p>
-                Horror-inspired OpenGL driving game built from scratch in C++. Focused on real-time rendering, lighting, and low-level graphics pipeline control.
-              </p>
-              <ul class="work__list">
-                <li>Implemented custom 3D rendering pipeline using OpenGL</li>
-                <li>Built lighting model in GLSL (fragment and vertex shaders)</li>
-                <li>Handled camera movement, transformations and matrix math manually</li>
-                <li>Implemented collision detection and fuel collection system</li>
-              </ul>
-
-              <div class="work__links">
-                
-                <a href="https://github.com/ArnasPuskunigis/comp3015">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
           </div>
 
-
           <div class="work__box">
+            <div class="work__image-box">
+              <img src="./images/WildestWest.png" class="work__image" alt="Wildest West" />
+            </div>
             <div class="work__text">
               <h3>WILDEST WEST</h3>
-              <p>
-                PS1-style light-gun shooter built in 48 hours for a Game Jam (7th/33). Focused on fast iteration, modular gameplay systems, and stylised rendering.
-              </p>
+              <div class="work__tags">
+                <span class="work__tag tag--csharp">C#</span>
+                <span class="work__tag tag--unity">Unity</span>
+                <span class="work__tag tag--gamejam">Game Jam</span>
+              </div>
+              <p>PS1-style light-gun shooter — built in 48 hours, placed <strong>7th out of 33</strong>.</p>
               <ul class="work__list">
-                <li>Optimised game loop under the 48 hour constraint</li>
-                <li>Rapid prototyping using Unity and C#</li>
-                <li>Custom shader implementation</li>
+                <li>Rapid prototyping and optimised game loop under a 48-hour constraint</li>
+                <li>Modular gameplay systems for fast iteration</li>
+                <li>Custom PS1-style shader implementation</li>
               </ul>
               <div class="work__links">
                 <a href="https://i7arkness.itch.io/wildest-west" target="_blank" class="link__text">
-                  Visit Itch.io Page <span>&rarr;</span>
+                  Itch.io Page <span>&rarr;</span>
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/WildestWest.png" class="work__image" alt="Project 4" />
-            </div>
           </div>
-
 
           <div class="work__box">
+            <div class="work__image-box">
+              <img src="./images/HexBound.png" class="work__image" alt="Hex Bound" />
+            </div>
             <div class="work__text">
               <h3>HEX BOUND</h3>
-              <p>
-                Dungeon crawler built in 7 days for the Spacebar Game Jam (1st/9). Designed around a single-input constraint, requiring system-driven gameplay design.
-              </p>
+              <div class="work__tags">
+                <span class="work__tag tag--csharp">C#</span>
+                <span class="work__tag tag--unity">Unity</span>
+                <span class="work__tag tag--gamejam">Game Jam</span>
+              </div>
+              <p>Dungeon crawler built in 7 days — placed <strong>1st out of 9</strong>. One input: the spacebar.</p>
               <ul class="work__list">
-                <li>Designed state-driven input architecture built around the spacebar only constraint</li>
-                <li>Implemented grid-based dungeon logic and enemy behaviour</li>
+                <li>State-driven input architecture designed around a single-button constraint</li>
+                <li>Grid-based dungeon logic with enemy AI behaviour</li>
+                <li>Animation state machine for player, enemies, and chests</li>
                 <li>Custom shader implementation</li>
-                <li>Implemented animation state machine for the player, enemies, and chests</li>
               </ul>
-
               <div class="work__links">
-                
                 <a href="https://i7arkness.itch.io/hex-bound" target="_blank" class="link__text">
-                  Visit Itch.io Page <span>&rarr;</span>
+                  Itch.io Page <span>&rarr;</span>
                 </a>
               </div>
             </div>
+          </div>
+
+        </div><!-- end personal work__boxes -->
+
+        <h2>Team Projects</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
             <div class="work__image-box">
-              <img src="./images/HexBound.png" class="work__image" alt="Project 5" />
+              <img src="./images/Greatest Blacksmith.png" class="work__image" alt="Greatest Blacksmith" />
+            </div>
+            <div class="work__text">
+              <h3>Greatest Blacksmith</h3>
+              <div class="work__tags">
+                <span class="work__tag tag--csharp">C#</span>
+                <span class="work__tag tag--unity">Unity</span>
+                <span class="work__tag tag--blender">Blender</span>
+                <span class="work__tag tag--mobile">Android</span>
+              </div>
+              <p>Mobile blacksmithing game built in a small team — shipped on Android.</p>
+              <ul class="work__list">
+                <li>Designed and built full UI architecture in Unity</li>
+                <li>Mobile optimisation for Android deployment</li>
+                <li>Full 3D asset pipeline from Blender to Unity</li>
+                <li>Collaborative development using version control and shared codebase</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://i7arkness.itch.io/greatest-blacksmith" target="_blank" class="link__text">
+                  Itch.io Page <span>&rarr;</span>
+                </a>
+              </div>
             </div>
           </div>
 
-          <h2>Team Projects</h2>
-          <div class="work__boxes">
-  
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Greatest Blacksmith</h3>
-                <p>
-                  Mobile blacksmithing game developed in a small team. Contributed to core gameplay systems, UI architecture, and full 3D asset pipeline.
-                </p>
-                <ul class="work__list">
-                  <li>Designed and built full UI architecture in Unity</li>
-                  <li>Integrated mobile optimisation for Android deployment</li>
-                  <li>Created the 3D asset pipeline - from Blender to Unity</li>
-                  <li>Collaborated using version control and a shared codebase</li>
-                </ul>
-                <div class="work__links">
-                  <a href="https://i7arkness.itch.io/greatest-blacksmith" target="_blank" class="link__text">
-                    Visit Itch.io page <span>&rarr;</span>
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/Greatest Blacksmith.png" class="work__image" alt="Project 6" />
-              </div>
-            </div>
-
-        </div>
+        </div><!-- end team work__boxes -->
       </div>
     </section>
 
-
-
     <!-- ***** About ***** -->
-
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
             <p>
-              I am a C# developer specialising in Unity and gameplay systems programming. I enjoy designing scalable game architectures and implementing real-time interactive systems. I also have experience with C++, OpenGL, and backend-integrated features such as leaderboards and live player data.
+              I'm a <strong>C# developer</strong> specialising in Unity and gameplay systems programming. I enjoy
+              designing scalable game architectures and building real-time interactive systems. I also have
+              experience with <strong>C++</strong>, OpenGL, and backend-integrated features such as live leaderboards and player data.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://docs.google.com/document/d/1Fyh8LWWupq8c-bQcsc_dbaCyA2TFAPtO/edit?usp=sharing&ouid=113681055463469033950&rtpof=true&sd=true" class="btn">My Resume</a>
+            <a href="https://docs.google.com/document/d/1Fyh8LWWupq8c-bQcsc_dbaCyA2TFAPtO/edit?usp=sharing&ouid=113681055463469033950&rtpof=true&sd=true"
+              class="btn">My Resume</a>
           </div>
-
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/me.jpg" alt="" />
+            <img class="about__photo" src="./images/me.jpg" alt="Arnas Puskunigis" />
           </div>
         </div>
       </div>
@@ -230,13 +212,12 @@
   </main>
 
   <!-- ***** Contact ***** -->
-
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Feel free to message me if you have questions or if you are interested in my work.
+          Feel free to reach out if you have any questions or are interested in working together.
         </p>
         <a href="mailto:Arnaspusk204@gmail.com" class="btn">Arnaspusk204@gmail.com</a>
       </div>
@@ -244,7 +225,6 @@
   </section>
 
   <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
       <ul class="footer__social-links">
@@ -254,11 +234,12 @@
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/arnas-puskunigis-018b80206/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/arnas-puskunigis-018b80206/" title="Link to LinkedIn Profile">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
+    </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
