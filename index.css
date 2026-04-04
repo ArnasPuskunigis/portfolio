@@ -456,17 +456,24 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .tag--csharp   { background: #7b3fa0; color: #fff; }
-.tag--unity    { background: #333; color: #fff; border: 1px solid #666; }
-.tag--cpp      { background: #00427e; color: #fff; }
+.tag--unity     { background: #333; color: #fff; border: 1px solid #666; }
+.tag--cpp       { background: #00427e; color: #fff; }
 .tag--opengl   { background: #5586a4; color: #fff; }
-.tag--glsl     { background: #2a6e5e; color: #fff; }
-.tag--blender  { background: #e87d0d; color: #fff; }
+.tag--glsl      { background: #2a6e5e; color: #fff; }
+.tag--blender   { background: #e87d0d; color: #fff; }
 .tag--steam    { background: #1b2838; color: #c7d5e0; border: 1px solid #4c6b8a; }
-.tag--ugs      { background: #395797; color: #fff; }
+.tag--ugs       { background: #395797; color: #fff; }
 .tag--gamejam  { background: #8b2252; color: #fff; }
-.tag--java   { background: #e92d32; color: #fff; }
-.tag--android   { background: #71c04a; color: #fff; }
-.tag--API   { background: #b339a3; color: #fff; }
+.tag--java      { background: #e92d32; color: #fff; }
+.tag--android  { background: #71c04a; color: #fff; }
+.tag--API    { background: #b339a3; color: #fff; }
+.tag--Illustrator   { background: #fe9a00; color: #fff; }
+.tag--aseprite   { background: #645561; color: #fff; }
+.tag--godot   { background: #478cbf; color: #fff; }
+.tag--2d   { background: #bf8747; color: #fff; }
+.tag--3d   { background: #bf479b; color: #fff; }
+.tag--lua      { background: #000080; color: #fff; }
+.tag--agile      { background: #2fa112; color: #fff; }
 
 .work__boxes {
     display: grid;
@@ -487,13 +494,8 @@ body:not(.user-is-tabbing) a:focus {
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 4px;
     overflow: hidden;
-    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.work__box:hover {
-    transform: translateY(-4px);
-    border-color: var(--blue);
-}
 
 .work__box:not(:last-child) {
     margin-bottom: 0;
@@ -512,10 +514,6 @@ body:not(.user-is-tabbing) a:focus {
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
-}
-
-.work__box:hover .work__image {
-    transform: scale(1.03);
 }
 
 .work__text {
