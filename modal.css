@@ -1,0 +1,240 @@
+/* ============================================================
+   PROJECT MODAL STYLES
+   Add this to your index.css or link as a separate file
+   ============================================================ */
+
+/* Read More button on each card */
+.btn-read-more {
+  display: inline-block;
+  padding: 8px 20px;
+  background: transparent;
+  border: 1.5px solid #e95252;
+  color: #e95252;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 12px;
+  font-family: inherit;
+}
+
+.btn-read-more:hover {
+  background: #e95252;
+  color: #fff;
+}
+
+/* Modal backdrop */
+#project-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+#project-modal.active {
+  display: block;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+/* Modal container */
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 780px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 2.4rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  z-index: 1;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #fff;
+}
+
+/* Header */
+.modal-header {
+  padding: 28px 32px 16px;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.modal-title {
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.modal-tag {
+  padding: 3px 10px;
+  background: #2a2a4a;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  color: #aab;
+}
+
+/* Tabs */
+.modal-tabs {
+  display: flex;
+  border-bottom: 1px solid #2a2a4a;
+  padding: 0 32px;
+}
+
+.modal-tab {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #778;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  font-family: inherit;
+  margin-bottom: -1px;
+}
+
+.modal-tab:hover {
+  color: #ccd;
+}
+
+.modal-tab.active {
+  color: #e95252;
+  border-bottom-color: #e95252;
+}
+
+/* Body */
+.modal-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 28px 32px;
+}
+
+.modal-panel {
+  display: none;
+  color: #ccd;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.modal-panel.active {
+  display: block;
+}
+
+.modal-panel p {
+  margin: 0 0 16px;
+}
+
+.modal-panel strong {
+  color: #fff;
+}
+
+/* Screenshots */
+.modal-figure {
+  margin: 0 0 24px;
+}
+
+.modal-figure img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #2a2a4a;
+}
+
+.modal-figure figcaption {
+  font-size: 1.3rem;
+  color: #778;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Code block */
+.modal-panel pre {
+  background: #0d0d1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  padding: 20px 24px;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.modal-panel code {
+  font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #a8d8a8;
+  white-space: pre;
+}
+
+/* Scrollbar styling */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #3a3a5a;
+  border-radius: 3px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .modal-container {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-tabs {
+    padding: 0 12px;
+    overflow-x: auto;
+  }
+
+  .modal-tab {
+    padding: 10px 14px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+  }
+
+  .modal-title {
+    font-size: 1.8rem;
+  }
+}

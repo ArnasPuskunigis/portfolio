@@ -11,6 +11,7 @@
   <meta name="description" content="Games and Software Developer specialising in Unity and C# gameplay systems.">
   <meta name="keywords" content="Arnas Puskunigis, Unity, Game Developer, C#, C++, Blender, OpenGL, Software Engineer" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="modal.css" />
 </head>
 
 <body>
@@ -69,6 +70,7 @@
                 <li>Leaderboard system using async callbacks with usernames pulled from Steam</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('gunman-drift')">Read More</button>
                 <a href="https://store.steampowered.com/app/3621150/Gunman_Drift/" target="_blank" class="link__text">
                   Steam Page <span>&rarr;</span>
                 </a>
@@ -95,6 +97,7 @@
                 <li>Version control via Git with shared Google Drive documentation</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('frankenstein-mod')">Read More</button>
                 <a href="https://www.moddb.com" target="_blank" class="link__text">
                   Mod Page <span>&rarr;</span>
                 </a>
@@ -131,6 +134,7 @@
                 <li>Custom shader implementation</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('hex-bound')">Read More</button>
                 <a href="https://i7arkness.itch.io/hex-bound" target="_blank" class="link__text">
                   Itch.io Page <span>&rarr;</span>
                 </a>
@@ -157,6 +161,7 @@
                 <li>Streamed the full development process live</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('devil-plinko')">Read More</button>
                 <a href="https://i7arkness.itch.io/holy-balls-vs-devil-plinko" target="_blank" class="link__text">
                   Itch.io Page <span>&rarr;</span>
                 </a>
@@ -181,6 +186,7 @@
                 <li>Designed and implemented UI screens, form validation, and navigation flow</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('restaurant-booking')">Read More</button>
                 <a href="https://www.youtube.com/watch?v=lQzm9K2_MkU" target="_blank" class="link__text">
                   Walkthrough Video <span>&rarr;</span>
                 </a>
@@ -207,39 +213,13 @@
                 <li>Collision detection and fuel collection system</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('drive')">Read More</button>
                 <a href="https://github.com/ArnasPuskunigis/comp3015" target="_blank" class="link__text">
                   Github <span>&rarr;</span>
                 </a>
               </div>
             </div>
           </div>
-
-          <!--<div class="work__box">
-            <div class="work__image-box">
-              <img src="./images/WildestWest.png" class="work__image" alt="Wildest West" />
-            </div>
-            <div class="work__text">
-              <h3>WILDEST WEST</h3>
-              <div class="work__tags">
-                <span class="work__tag tag--csharp">C#</span>
-                <span class="work__tag tag--unity">Unity</span>
-                <span class="work__tag tag--gamejam">Game Jam</span>
-              </div>
-              <p>PS1-style light-gun shooter built in 48 hours, placed <strong>7th out of 33</strong>.</p>
-              <ul class="work__list">
-                <li>Rapid prototyping and optimised game loop under a 48-hour constraint</li>
-                <li>Modular gameplay systems for fast iteration</li>
-                <li>Custom PS1-style shader implementation</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://i7arkness.itch.io/wildest-west" target="_blank" class="link__text">
-                  Itch.io Page <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-          </div> -->
-
-          
 
         </div><!-- end personal work__boxes -->
 
@@ -268,6 +248,7 @@
                 <li>Collaborative development using version control and shared codebase</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('greatest-blacksmith')">Read More</button>
                 <a href="https://i7arkness.itch.io/greatest-blacksmith" target="_blank" class="link__text">
                   Itch.io Page <span>&rarr;</span>
                 </a>
@@ -293,6 +274,7 @@
                 <li>Collaborated with team using version control and shared codebase</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('ranger-nes')">Read More</button>
                 <a href="https://rockm3000.itch.io/ranger" target="_blank" class="link__text">
                   Itch.io Page <span>&rarr;</span>
                 </a>
@@ -319,6 +301,7 @@
                 <li>Collaborative development under time constraints with a shared codebase</li>
               </ul>
               <div class="work__links">
+                <button class="btn-read-more" onclick="openModal('all-for-one')">Read More</button>
                 <a href="https://mazzs-games.itch.io/all-for-one" target="_blank" class="link__text">
                   Itch.io Page <span>&rarr;</span>
                 </a>
@@ -387,7 +370,33 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
+  <!-- Modal -->
+  <div id="project-modal">
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <div class="modal-header">
+        <h2 class="modal-title"></h2>
+        <div class="modal-tags"></div>
+      </div>
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="technical">Technical</button>
+        <button class="modal-tab" data-tab="screenshots">Screenshots</button>
+        <button class="modal-tab" data-tab="code">Code</button>
+        <button class="modal-tab" data-tab="lessons">Lessons</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-panel active" id="tab-technical"></div>
+        <div class="modal-panel" id="tab-screenshots"></div>
+        <div class="modal-panel" id="tab-code"></div>
+        <div class="modal-panel" id="tab-lessons"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="./index.js"></script>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
